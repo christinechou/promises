@@ -17,7 +17,7 @@ var pluckFirstLineFromFileAsync = function(filePath) {
       } else {
         var firstLine = file.split('\n')[0];
         resolve(firstLine);
-      })
+      }
     });
   });
 };

@@ -11,11 +11,11 @@ var pluckFirstLineFromFile = function (filePath) {
     if (err) {
       callback(err, null);  //no file returned
     } else {
-      var firstLine = file.split('\n')[0]
+      var firstLine = file.split('\n')[0];
       //first error first pattern:
       callback(null, firstLine);
     }
-  })
+  });
 };
 
 // This function should retrieve the status code of a GET request to `url`
@@ -24,9 +24,9 @@ var getStatusCode = function (url, callback) {
     if (err) {
       return callback(err, null);
     } else {
-      callback(null, response.statusCode)
+      callback(null, response.statusCode);
     }
-  })
+  });
 };
 
 // Export these functions so we can test them and reuse them in later exercises
